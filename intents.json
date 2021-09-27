@@ -1,0 +1,43 @@
+{"intents": [
+        {
+			"tag": "greeting",
+			"patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Greetings", "sup", "yo", "wassup m8"],
+			"responses": ["Hello", "Good to see you", "Hi there, how can I help?","wassup"],
+			"context_set": ""
+        },
+        {
+			"tag": "goodbye",
+			"patterns": ["Bye", "See you later", "Goodbye", "c'ya", "brb", "gtg"],
+			"responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {
+			"tag": "thanks",
+			"patterns": ["Thanks", "Thank you", "That's helpful"],
+			"responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {
+			"tag": "wellbeing",
+			"patterns": ["how are you today?", "how's your day"],
+			"responses": ["So-so", "Not bad", "Same old - same old"]
+        },
+		{
+			"tag": "compliment",
+			"patterns": ["i just did something great", "you won't believe this"],
+			"responses": ["Cool","Awesome","Great!","Noice!"],
+			"context_filter": "chit-chat"
+		},
+		{
+			"tag": "suggestion",
+			"patterns":["i have no idea what am i talking about","what on earth am i talking about","im at loss","Ok...","So...","Anything else ?"],
+			"responses":["Let's talk about something else","Let's change the topic","Can you tell me a story?","Tell me more about you"],
+			"context_set": "chit-chat"
+		},
+		{
+			"tag": "agree",
+			"patterns":[""],
+			"responses":["I see","Hmm...","Ok...","And...","So...","Anything else ?"],
+			"context_filter": "chit-chat"
+		}
+
+   ]
+}
