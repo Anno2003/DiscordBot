@@ -34,9 +34,15 @@
 		},
 		{
 			"tag": "agree",
-			"patterns":[""],
+			"patterns":["what do you think?"],
 			"responses":["I see","Hmm...","Ok...","And...","So...","Anything else ?"],
 			"context_filter": "chit-chat"
+		},
+		{
+			"tag": "bot",
+			"patterns":["are you a bot?","you are a bot right?","bot?","bot",""],
+			"responses":["No (:","perhaps... no","i am definitely sure that i am not! a bot","maybe you are the bot"],
+			"context_set": "bot identity"
 		}
 
    ]

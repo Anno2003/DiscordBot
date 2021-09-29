@@ -3,6 +3,7 @@ import discord
 import chatbot
 import random
 from discord.ext import commands
+from discord.ext.commands import MissingPermissions
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -16,8 +17,11 @@ client = commands.Bot(command_prefix=PREFIX,help_command=helpCmd)
 chatbot = chatbot.Chatbot()
 chatbot.loadIntents("./intents.json")
 #TODO: find a way to train only when intents json is changed
+#dont forget to train model if intents.json is changed
+#if intents.json is changed while bot is off then bot must be trained first
+#else load model(load model automatically trains if there's no model yet)
 chatbot.trainModel()
-#chatbot.loadModel()#dont forget to train model if intents.json is changed
+#chatbot.loadModel()
 
 @client.event
 async def on_ready():
@@ -35,6 +39,19 @@ class Chat(commands.Cog, description="Chat by mentioning"):
         elif self.client.user.mentioned_in(message):
             response = chatbot.response(message.content)
             await message.channel.send(response)
+    
+    @commands.command(name="train",hidden=True)
+    #@commands.has_any_role("Kang Bot","bot maintenance","Mod","MODS")
+    @commands.is_owner()
+    async def train(self,ctx):
+        async with ctx.typing():
+            await chatbot.trainModel()
+            await ctx.send('done!')
+    
+    @train.error
+    async def train_error(self,ctx,error):
+        if isinstance(error,MissingPermissions):
+            await ctx.send(":redTick: You don't have permission to train me!")
 
 class Utility(commands.Cog, description="Questionably useful stuff"):
     def __init__(self,client):
