@@ -124,7 +124,8 @@ class Chatbot:
         #define model and setup tensorboard
         self.model = tflearn.DNN(net,tensorboard_dir='tflearn_logs')
     
-    def trainModel(self):
+    def trainModel(self,intentPath):
+        self.loadIntents(intentPath)
         tf.compat.v1.reset_default_graph()
         self.model.fit(self.trainX,self.trainY,n_epoch=1000,batch_size=8,show_metric=False)
         self.model.save('model.tflearn')
@@ -141,8 +142,7 @@ class Chatbot:
 #
 #bot = chatbot.Chatbot()
 # 
-#bot.loadIntents("./intents.json")
-#bot.trainModel() # in case intents.json changes
+#bot.trainModel("./intents.json") # in case intents.json changes
 #bot.loadModel() # loadModel automatically trains model if no model.tflearn exist
 #
 #bot.response("hello there!")

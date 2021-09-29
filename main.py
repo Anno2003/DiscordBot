@@ -15,12 +15,11 @@ helpCmd=commands.DefaultHelpCommand(no_category="Other stuff")
 client = commands.Bot(command_prefix=PREFIX,help_command=helpCmd)
 
 chatbot = chatbot.Chatbot()
-chatbot.loadIntents("./intents.json")
 #TODO: find a way to train only when intents json is changed
 #dont forget to train model if intents.json is changed
 #if intents.json is changed while bot is off then bot must be trained first
 #else load model(load model automatically trains if there's no model yet)
-chatbot.trainModel()
+chatbot.trainModel("./intents.json")
 #chatbot.loadModel()
 
 @client.event
@@ -45,7 +44,7 @@ class Chat(commands.Cog, description="Chat by mentioning"):
     @commands.is_owner()
     async def train(self,ctx):
         async with ctx.typing():
-            await chatbot.trainModel()
+            await chatbot.trainModel("./intents.json")
             await ctx.send('done!')
     
     @train.error
