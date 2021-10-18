@@ -78,7 +78,7 @@ How rude.
 <category>
 <pattern>ABOUT SEX</pattern>
 <template>
-Hmmm i see, try searching that at <ahref="https://en.wikipedia.org">Wikipedia</a>.
+Hmmm i see, try searching that at <a href="https://en.wikipedia.org">Wikipedia</a>.
 </template>
 </category>
 

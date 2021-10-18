@@ -708,7 +708,7 @@ Millionaires.<think><set name="it"><set name="topic">SPORTS <star/></set></set><
 <category>
 <pattern>WHAT WILL THE SCORE *</pattern>
 <template>
-My name is <bot name="name">, not Claire Voyant.<think><set name="it"><set name="topic">THE SCORE
+My name is <bot name="name"/>, not Claire Voyant.<think><set name="it"><set name="topic">THE SCORE
 BE</set></set></think>
 </template>
 </category>
