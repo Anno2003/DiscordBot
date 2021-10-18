@@ -1,7 +1,8 @@
 import os
 import discord
-import chatbot
 import random
+import aiml
+import re
 from discord.ext import commands
 from discord.ext.commands import MissingPermissions
 from dotenv import load_dotenv
@@ -10,17 +11,44 @@ load_dotenv()
 TOKEN = os.getenv('TOKEN')
 PREFIX= os.getenv('PREFIX')
 
+chatbot = aiml.Kernel()
+
+if os.path.isfile("./bot_brain.brn"):
+    chatbot.bootstrap(brainFile="bot_brain.brn")
+else:
+    chatbot.bootstrap(learnFiles = "startup.xml", commands="LOAD AIML A")
+    chatbot.saveBrain("bot_brain.brn")
+
+chatbot.setBotPredicate("name","Saya")
+chatbot.setBotPredicate("gender","female")
+chatbot.setBotPredicate("master","Not telling")
+chatbot.setBotPredicate("birthday","idk")
+chatbot.setBotPredicate("birthplace","Computer")
+chatbot.setBotPredicate("boyfriend","not you")
+chatbot.setBotPredicate("favoritebook","Don't Read Me")
+chatbot.setBotPredicate("favoritecolor","transparent")
+chatbot.setBotPredicate("favoriteband","rubber")
+chatbot.setBotPredicate("favoritefood","patterns")
+chatbot.setBotPredicate("favoritesong","your voice")
+chatbot.setBotPredicate("favoritemovie","your life story")
+chatbot.setBotPredicate("forfun","talk to you")
+chatbot.setBotPredicate("friends","you")
+chatbot.setBotPredicate("girlfriend","not you")
+chatbot.setBotPredicate("kindmusic","all")
+chatbot.setBotPredicate("location","here")
+chatbot.setBotPredicate("looklike","you")
+chatbot.setBotPredicate("question","What?")
+chatbot.setBotPredicate("sign","none")
+chatbot.setBotPredicate("talkabout","anything")
+chatbot.setBotPredicate("wear","nothing :3")
+chatbot.setBotPredicate("website","don't have one")
+chatbot.setBotPredicate("email","don't have one")
+chatbot.setBotPredicate("language","any (english preferred)")
+chatbot.setBotPredicate("msagent","no")
 
 helpCmd=commands.DefaultHelpCommand(no_category="Other stuff")
 client = commands.Bot(command_prefix=PREFIX,help_command=helpCmd)
 
-chatbot = chatbot.Chatbot()
-#TODO: find a way to train only when intents json is changed
-#dont forget to train model if intents.json is changed
-#if intents.json is changed while bot is off then bot must be trained first
-#else load model(load model automatically trains if there's no model yet)
-chatbot.trainModel("./intents.json")
-#chatbot.loadModel()
 
 @client.event
 async def on_ready():
@@ -35,17 +63,20 @@ class Chat(commands.Cog, description="Chat by mentioning"):
     async def on_message(self,message):
         if (message.author == self.client.user):
             return
+            
         elif self.client.user.mentioned_in(message):
-            response = chatbot.response(message.content)
+            clean = re.sub(r'<@!?(\d+)>|<@&?(\d+)>|<#(\d+)>','',message.content)
+            response = chatbot.respond(clean,message.author.id)
+            #print(clean)
             await message.channel.send(response)
     
-    @commands.command(name="train",hidden=True)
-    #@commands.has_any_role("Kang Bot","bot maintenance","Mod","MODS")
-    @commands.is_owner()
+    @commands.command(name="reload",description="reload chatbot")
+    @commands.has_any_role("Kang Bot","bot maintenance","Mod","MODS","OP")
+    #@commands.is_owner()
     async def train(self,ctx):
-        async with ctx.typing():
-            await chatbot.trainModel("./intents.json")
-            await ctx.send('done!')
+        chatbot.saveBrain("bot_brain.brn")
+        chatbot.respond("LOAD AIML A")
+        await ctx.send("Done!")
     
     @train.error
     async def train_error(self,ctx,error):
