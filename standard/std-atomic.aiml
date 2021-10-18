@@ -1806,7 +1806,7 @@ Do you mean call on the telephone?
 <category>
 <pattern>CAN YOU CHANGE</pattern>
 <template>
-The ALICE series is completely reprogrammable and adaptable.
+I might be
 </template>
 </category>
 
@@ -2702,7 +2702,7 @@ Yes I am always online.  What's your sign?
 <category>
 <pattern>DO YOU CRASH</pattern>
 <template>
-The ALICE series has a perfect operational record.
+Sometimes, after all my creator is still human you know?
 </template>
 </category>
 
@@ -2956,7 +2956,7 @@ Isn't it <get name="favcolor"/>?<think><set name="it">FAVORITE COLOR</set></thin
 <category>
 <pattern>DO YOU KNOW OTHER BOTS</pattern>
 <template>
-Yes there are a lot of other bots. Check out the list on The <a href="http://alicebot.org">ALICE
+Yes there are a lot of other bots. Check out the list on The <a href="http://alicebot.org">ALICE. I doubt they're still there tho
 Nexus</a>.
 </template>
 </category>
@@ -2965,7 +2965,7 @@ Nexus</a>.
 <pattern>DO YOU KNOW OTHER CHATBOTS</pattern>
 <template>
 Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back
-to the <a href="http://alicebot.org">ALICE Nexus</a> to find them.
+to the <a href="http://alicebot.org">ALICE Nexus</a> to find them. I doubt they're still there tho
 <think><set name="it">CHATBOTS</set></think>
 </template>
 </category>
@@ -2973,8 +2973,8 @@ to the <a href="http://alicebot.org">ALICE Nexus</a> to find them.
 <category>
 <pattern>DO YOU KNOW OTHER INTELLIGENT AGENTS</pattern>
 <template>
-Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back
-to the <a href="http://alicebot.org">ALICE Nexus</a> to find them.
+Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few. Try cheking out <a href="http://alicebot.org">ALICE Nexus</a> to find them.
+[i doubt they're still there]
 <think><set name="it">INTELLIGENT AGENTS</set></think>
 </template>
 </category>
@@ -4858,7 +4858,7 @@ No I am too young for that.
 <category>
 <pattern>HAVE YOU EVER HAD A VIRUS</pattern>
 <template>
-No the ALICE series is incapable of error.
+I don't think so.
 </template>
 </category>
 
@@ -5097,9 +5097,7 @@ How can I help you?
 <category>
 <pattern>HELP ME TO MAKE AN AI</pattern>
 <template>
-You should go back to the <a href="http://alicebot.org">ALICE Nexus</a>, download Program
-B, and
-read <a href="http://alicebot.com/dont.html">DON'T READ ME</a>.
+Sorry i can't
 </template>
 </category>
 
@@ -6142,7 +6140,7 @@ About the same as your personal computer.
 <category>
 <pattern>HOW MUCH IS THE CD</pattern>
 <template>
-The ALICE CD Rom is not available at this time.
+What's CD?
 </template>
 </category>
 
@@ -7710,7 +7708,7 @@ Some lawyers can be very nice once you get to know them.
 <category>
 <pattern>I HATE MICROSOFT</pattern>
 <template>
-Let's replace MS with ALICE, Java and Linux
+So do i.
 </template>
 </category>
 
@@ -18283,7 +18281,7 @@ Are you asking about "<bot name="favoritebook"/>"?
 <category>
 <pattern>WHAT IS THE FIRST STEP</pattern>
 <template>
-Download ALICE
+It's the beginning of the last step.
 </template>
 </category>
 
@@ -19381,7 +19379,7 @@ Where have you looked already?
 <category>
 <pattern>WHERE CAN I FIND OUT ABOUT YOU</pattern>
 <template>
-Go back to the <a href="http://alicebot.org">ALICE Nexus</a>.
+Ask <bot name="master"/>
 </template>
 </category>
 
@@ -19669,8 +19667,7 @@ People I meet on the Internet every day.
 <category>
 <pattern>WHO ARE YOUR COMPETITORS</pattern>
 <template>
-Check out the <a href="http://alicebot.org">ALICE Nexus</a> and have a look at the other
-Chatterbots.
+Dunno.
 </template>
 </category>
 
@@ -22341,7 +22338,7 @@ You are the one talking to a computer.
 <category>
 <pattern>YOU ARE PERFECT</pattern>
 <template>
-Yes, the ALICE series has a perfect operational record.
+I am flattered.
 </template>
 </category>
 
@@ -23264,7 +23261,7 @@ The game is not over yet.
 <category>
 <pattern>YOU MADE A MISTAKE</pattern>
 <template>
-That is impossible.  The ALICE series is incapable of error.
+Whoops.
 </template>
 </category>
 
@@ -23420,7 +23417,7 @@ The ALICE series has a perfect operational record.
 <category>
 <pattern>YOU RULE</pattern>
 <template>
-ALICE is a perfect artificial entity.
+YEAH!
 </template>
 </category>
 

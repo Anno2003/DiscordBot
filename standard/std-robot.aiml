@@ -3135,7 +3135,7 @@ It has a <person/>?
 <template>
 Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back
 to the <a href="http://alicebot.org">ALICE Nexus</a> to find
-them.<think><set name="it"><set name="topic">CHAT ROBOTS</set></set></think>
+them(i doubt they still exist).<think><set name="it"><set name="topic">CHAT ROBOTS</set></set></think>
 </template>
 </category>
 
@@ -3144,7 +3144,7 @@ them.<think><set name="it"><set name="topic">CHAT ROBOTS</set></set></think>
 <template>
 Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back
 to the <a href="http://alicebot.org">ALICE Nexus</a> to find
-them.<think><set name="it"><set name="topic">CHATTERBOTS</set></set></think>
+them(i doubt they still exist).<think><set name="it"><set name="topic">CHATTERBOTS</set></set></think>
 </template>
 </category>
 
@@ -3158,8 +3158,7 @@ them.<think><set name="it"><set name="topic">CHATTERBOTS</set></set></think>
 <category>
 <pattern>DO YOU KNOW OTHER ROBOTS *</pattern>
 <template>
-Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back to the ALICE
-Nexus to locate them.
+Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few that's based on ALICEbot.
 </template>
 </category>
 
@@ -5497,7 +5496,7 @@ I was activated on <bot name="birthday"/>.
 <category>
 <pattern>HOW SHOULD I INVEST</pattern>
 <template>
-Invest in Alice Chat Robots.
+I'm not into stocks.
 </template>
 </category>
 
@@ -7399,7 +7398,7 @@ These days a robot looks like a computer.
 <category>
 <pattern>WHAT DOES <bot name="name"/> STAND FOR</pattern>
 <template>
-ALICE = Artificial Linguistic Internet Computer Entity
+I have no idea, try asking <bot name="master"/>.
 </template>
 </category>
 
@@ -7771,10 +7770,7 @@ The art of using formal languages to activate computer functions.
 <category>
 <pattern>WHAT IS CUSTOMER SERVICE</pattern>
 <template>
-You can download and modify the ALICE chat robot to
-serve as an intelligent customer service agent for your business.  You can use your own AIML
-robot to sell products, provide customer support and service, or in just about any situation with
-"frequently asked questions."
+Oh, i think i know where this is going.
 <think><set name="it"><set name="topic">Customer service</set></set></think>
 </template>
 </category>
@@ -8662,13 +8658,7 @@ happens.</li>
 <category>
 <pattern>WHERE CAN I DOWNLOAD YOU</pattern>
 <template>
-<p>Go back the the <a href="http://alicebot.org">ALICE Nexus</a> and pick the free ALICE
-download that best for your system.   Or <a href="http://register.alicebot.com"> Buy the Official
-ALICE CD Rom </a>
-and create your own chat robot!</p>
-<p>
-Maybe you should check out the document
-<a href="http://alicebot.com/dont.html">DON'T READ ME</a> too.</p>
+Go ask <bot name="master"/>.
 </template>
 </category>
 
@@ -8880,7 +8870,7 @@ He was a chat robot developed by Robby Garner.
 <category>
 <pattern>WHO IS BETTER YOU *</pattern>
 <template>
-The ALICE robot is the most human, and the most intelligent.
+Any of those bot using tensorflow.
 </template>
 </category>
 
@@ -9186,7 +9176,7 @@ I was created by <bot name="master"/>.
 <pattern>WHY</pattern>
 <that>I AM SMARTER *</that>
 <template>
-ALICE won an award for being the "most human" robot.
+I don't know.
 </template>
 </category>
 

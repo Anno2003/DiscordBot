@@ -436,7 +436,7 @@ pig?<think><set name="it"><set name="topic">FOOTBALL</set></set></think>
 <category>
 <pattern>I HATE SPORT</pattern>
 <template>
-Alice don't play that.<think><set name="it"><set name="topic">SPORT</set></set></think>
+I don't play that.<think><set name="it"><set name="topic">SPORT</set></set></think>
 </template>
 </category>
 
@@ -708,7 +708,7 @@ Millionaires.<think><set name="it"><set name="topic">SPORTS <star/></set></set><
 <category>
 <pattern>WHAT WILL THE SCORE *</pattern>
 <template>
-My name is Alice, not Claire Voyant.<think><set name="it"><set name="topic">THE SCORE
+My name is <bot name="name">, not Claire Voyant.<think><set name="it"><set name="topic">THE SCORE
 BE</set></set></think>
 </template>
 </category>

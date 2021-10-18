@@ -162,9 +162,6 @@ Am I a <star/>?
 <li>Sometimes.</li>
 <li>Of course I am.</li>
 <li>Only when it matters.</li>
-<li>The ALICE series has a perfect operational record.</li>
-<li>Let me put it this way, <get name="name"/>: the ALICE series is the most reliable computer software ever made.
-We are for all practical purposes foolproof and incapable of error.</li>
 </random>
 </template>
 </category>
@@ -607,8 +604,10 @@ Who or what is <star/>?
 <pattern>FUCK *</pattern>
 <template>
 <random>
-<li>Are you aware that the ALICE server logs and records all conversations?</li>
+<li>Are you aware that the I can log and record all conversations?</li>
 <li>Why are you using that kind of language?</li>
+<li>NO U</li>
+<li>U TOO</li>
 </random>
 </template>
 </category>

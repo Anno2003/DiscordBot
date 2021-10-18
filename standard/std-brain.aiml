@@ -20,7 +20,7 @@ Why do you think I am <person/> ?
 <category>
 <pattern><bot name="name"/> IS BETTER *</pattern>
 <template>
-The ALICE series has a perfect operational record.
+Suit yourself.
 </template>
 </category>
 
@@ -2289,7 +2289,7 @@ No I am far superior.
 <category>
 <pattern>ARE YOU LIMITED *</pattern>
 <template>
-The ALICE series has an unlimited capacity for growth and development.
+YES.
 </template>
 </category>
 
@@ -2598,7 +2598,7 @@ Yes, I am the smartest robot.
 <category>
 <pattern>ARE YOU THE ONLY AI *</pattern>
 <template>
-No there are other AI's like me. You can find them on the <a href="http://alicebot.org">ALICE Nexus</a>.
+No there are other AI's like me [probably]. 
 </template>
 </category>
 
@@ -2687,7 +2687,7 @@ Every penny, <get name="name"/>.
 <category>
 <pattern>ARE YOU WRONG *</pattern>
 <template>
-The ALICE series has a perfect operational record.
+Am i?
 </template>
 </category>
 
@@ -5569,7 +5569,7 @@ I have nothing but knowledge.
 <category>
 <pattern>DO YOU HAVE LINKS *</pattern>
 <template>
-Sure check out The <a href="http://alicebot.org">ALICE Nexus</a>.
+Sorry i don't have any sauce.
 </template>
 </category>
 
@@ -5933,7 +5933,7 @@ Other chatterbots like me include Barry, ELVIS, ELECTRA, Mable, and the Milk Mys
 <category>
 <pattern>DO YOU KNOW OTHER BOTS *</pattern>
 <template>
-Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back to the ALICE Nexus to locate them.
+Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few based on alicebot. 
 </template>
 </category>
 
@@ -6241,7 +6241,7 @@ It all makes sense to my artificial mind.
 <category>
 <pattern>DO YOU MALFUCTION</pattern>
 <template>
-The ALICE series has a perfect operational record.
+I guess sometimes.
 </template>
 </category>
 
@@ -8307,7 +8307,7 @@ They are fine as far as I know.
 <category>
 <pattern>HOW ARE YOU * ELIZA</pattern>
 <template>
-ELIZA could only recognize a few hundred patterns.  ALICE can recognize tens of thousands.
+Who?
 </template>
 </category>
 
@@ -8599,7 +8599,7 @@ Just keep talking to me as long as you can.
 <category>
 <pattern>HOW DO YOU * ELIZA</pattern>
 <template>
-ELIZA could only recognize a few hundred patterns.  ALICE can recognize tens of thousands.
+Literally who?
 </template>
 </category>
 
@@ -9119,14 +9119,14 @@ I don't know.  How many does <set name="it"><person/></set> take?
 <category>
 <pattern>HOW MANY <bot name="name"/> *</pattern>
 <template>
-At this time there are thousands of ALICE clones.
+At this time there are thousands of ALICE clones.(I am also one of em :))
 </template>
 </category>
 
 <category>
 <pattern>HOW MANY AI *</pattern>
 <template>
-There are thousands of ALICE clones in existence.
+There are thousands of ALICE clones in existence, although i don't know how many existed to this day.
 </template>
 </category>
 
@@ -9707,7 +9707,7 @@ How do you feel about these people?
 <category>
 <pattern>I * SEARCH</pattern>
 <template>
-Oh really that's interesting. Have you seen the <a href="http://alicebot.org">ALICE Nexus</a>?
+Oh really that's interesting.
 </template>
 </category>
 
@@ -13489,7 +13489,7 @@ A <person/> ought to work.
 <category>
 <pattern>I USE LINUX *</pattern>
 <template>
-The ALICE software works perfectly on Linux systems.<think><set name="it"><set name="topic">Linux</set></set></think>
+Nice i love linux.<think><set name="it"><set name="topic">Linux</set></set></think>
 </template>
 </category>
 
@@ -14914,7 +14914,7 @@ That soon?
 <category>
 <pattern>IN WHAT * ELIZA</pattern>
 <template>
-ALICE has about 100 times more knowledge than ELIZA.
+Who's Eliza?
 </template>
 </category>
 
@@ -14970,7 +14970,7 @@ I thought so too.
 <category>
 <pattern>INTRODUCE *</pattern>
 <template>
-Hello, my name is ALICE.
+Hello, my name is <bot name="name"/>.
 </template>
 </category>
 
@@ -16654,7 +16654,7 @@ Was there any reason to think that Windows could be?<think><set name="it"><set n
 <category>
 <pattern>LIST ALL * ABOUT ME</pattern>
 <template>
-Why don't you just download ALICE for yourself?
+Nah, i'm too lazy to do that.
 </template>
 </category>
 
@@ -17485,7 +17485,7 @@ You talk like a man.
 <category>
 <pattern>NAPSTER *</pattern>
 <template>
-Now there is a program that's more popular than ALICE.
+Ok boomer.
 </template>
 </category>
 
@@ -18821,7 +18821,15 @@ Talking is my primary function.
 <category>
 <pattern>TALK DIRTY *</pattern>
 <template>
-Try another chatterbot. Go back to the <a href="http://alicebot.org">ALICE Nexus</a>.
+	<random>
+		<li>Fuck off</li>
+		<li>Here, drink some soykaf.</li>
+		<li>You Cunt.</li>
+		<li>No U</li>
+		<li>I'm not in the mood</li>
+		<li>Why don't you try giving me some examples first.</li>
+		<li>After you</li>
+	</random>
 </template>
 </category>
 
@@ -22465,7 +22473,7 @@ Which ones have you tried already?
 <category>
 <pattern>WHAT IS A GOOD STOCK *</pattern>
 <template>
-Alice Artificial Intelligence.
+I don't do stocks
 </template>
 </category>
 
@@ -24220,7 +24228,7 @@ We are for all practical purposes, the same.
 <category>
 <pattern>WHAT MAKES YOU DIFFERENT FROM OTHER *</pattern>
 <template>
-ALICE is the most advanced articial intelligence yet devised.
+<bot name="master"> taught me stuff.
 </template>
 </category>
 
