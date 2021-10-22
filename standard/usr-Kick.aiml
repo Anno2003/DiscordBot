@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!-- 
+<category> 
+	<pattern></pattern>
+
+	<template>
+	
+	</template>
+</category>
+-->
+
+<category> 
+	<pattern>KICK *</pattern>
+	<pattern>SHALL WE KICK *</pattern>
+	<pattern>LET'S KICK *</pattern>
+	<pattern>HOW DO YOU THINK ABOUT KICKING *</pattern>
+	<template>
+		<random>
+			<li>Maybe not</li>
+			<li>Why tho?</li>
+			<li>Not today</li>
+			<li>Go ahead</li>
+		</random>
+	</template>
+</category>
+
+</aiml>
