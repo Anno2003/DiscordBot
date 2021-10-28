@@ -1,3 +1,5 @@
 .env
-__pycache__/
 bot_brain.brn
+
+.ideas/
+__pycache__/
